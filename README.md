@@ -1,3 +1,3 @@
 ### Download Basic
 
-`curl https://codeload.github.com/JoaoCarabetta/project-templates/tar.gz/master | tar -xz --strip=2 project-templates-master/basic`
+`curl https://codeload.github.com/fernandascovino/project-templates/tar.gz/master | tar -xz --strip=2 project-templates-master/basic`
