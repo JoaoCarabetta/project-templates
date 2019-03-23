@@ -1,3 +1,8 @@
-### Download Basic
+### How to use it
 
-`curl https://codeload.github.com/fernandascovino/project-templates/tar.gz/master | tar -xz --strip=2 project-templates-master/basic`
+Run the autorization and bash file:
+
+`chmod +x create_repo.sh && ./create_repo.sh [username] [project_name] [email] ["First Last_name"]`
+
+It will automatically create a repository on your local with the folder `basic` structure and a project sync on git :)
+
