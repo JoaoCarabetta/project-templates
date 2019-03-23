@@ -25,7 +25,7 @@ function start_project() {
  cd $project
 
  echo "Downloading basic folder...";
- curl https://codeload.github.com/fernandascovino/project-templates/tar.gz/master | tar -xz --strip=2 project-templates-master/basic
+ curl https://codeload.github.com/$username/project-templates/tar.gz/master | tar -xz --strip=2 project-templates-master/basic
 
  echo "Inicialize git and set remote...";
  git init
