@@ -1,21 +1,13 @@
-### How to use it
+### Create a terminal command to start a project
+
+You will be able to start a project with
+
+`start_project [username] [project_name] [email] ["First Last_name"]`
 
 
- Run the autorization and bash file:
+Follow [this](https://medium.com/devnetwork/how-to-create-your-own-custom-terminal-commands-c5008782a78e) and use this code in your bash script:
 
- `chmod +x create_repo.sh && ./create_repo.sh [username] [project_name] [email] ["First Last_name"]`
-
- It will automatically create a repository on your local with the folder `basic` structure and a project sync on git :)
-
-
-### Add to terminal as a command
-
-Follow [this](https://medium.com/devnetwork/how-to-create-your-own-custom-terminal-commands-c5008782a78e)
-
-Use this code in your bash script:
-
-
-```basn
+```bash
 #!/bin/bash
 # prints the input
 function start_project() {
@@ -53,3 +45,13 @@ function start_project() {
  echo "Done!";
 }
 ```
+
+### How to use it
+
+
+ Run the autorization and bash file:
+
+ `chmod +x create_repo.sh && ./create_repo.sh [username] [project_name] [email] ["First Last_name"]`
+
+ It will automatically create a repository on your local with the folder `basic` structure and a project sync on git :)
+
