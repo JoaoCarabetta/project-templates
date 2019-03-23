@@ -18,7 +18,7 @@ Use this code in your bash script:
 ```basn
 #!/bin/bash
 # prints the input
-function basic_project() {
+function start_project() {
  
  username=$1
  project=$2
