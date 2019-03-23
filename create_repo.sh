@@ -8,6 +8,10 @@ name=$4
 echo "Creating a git ropository...";
 curl -u $username https://api.github.com/user/repos -d {\"name\":\"$project\"}
 
+echo "Create local repository..."
+mkdir $project
+cd $project
+
 echo "Downloading basic folder...";
 curl https://codeload.github.com/fernandascovino/project-templates/tar.gz/master | tar -xz --strip=2 project-templates-master/basic
 
