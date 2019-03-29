@@ -8,11 +8,11 @@ One Paragraph of project description goes here.
     ├── README.md                  <- The top-level README for developers using this project (also know as this file!)
     ├── data
     │   ├── output                 <- Output processed data
-    │   └── raw                    <- The original, immutable data dump.
-    ├── code
-    │   ├── notebooks              <- Jupyter notebooks
-    │   └── scripts                <- Python files
-    │   └── requirements.txt       <- Packages used in the code
+    │   ├── treated                <- The cleaned and treated data for analysis
+    │   └── raw                    <- The original, immutable data dump
+    ├── notebooks                  <- Jupyter notebooks
+    ├── scripts                    <- Python files
+    ├── requirements.txt           <- Packages used in the code
 
 ### Getting Started
 
@@ -26,9 +26,13 @@ You need to have the packages on `requirements.txt` installed. To do that, open 
 pip3 install -U -r requirements.txt
 ```
 
+#### Changing author
+
+You need change to your name on the files: [LICENSE.md](LICENSE.md), here (below) and optionally put on your code files :)
+
 ### Authors
 
-* **Fernanda Scovino** - *Code maker* - [fernandascovino](https://github.com/fernandascovino)
+* **You** - *Code maker* - [@you](https://github.com/@you)
 
 ### License
 
@@ -37,5 +41,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ### Acknowledgments
 
 * This README was adapted from [*A template to make good README.md*](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* This repository was adapted from [*Fast Project Templates*](https://github.com/JoaoCarabetta/project-templates)
+* The structure of this repository was adapted from [*Fast Project Templates*](https://github.com/JoaoCarabetta/project-templates)
 

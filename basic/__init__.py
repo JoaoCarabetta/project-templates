@@ -2,5 +2,5 @@
 #
 # Example:
 #
-# >>> import scripts.example
+# >>> import example
 # hi
