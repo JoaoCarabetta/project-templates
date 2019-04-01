@@ -8,12 +8,12 @@ For instance
 
 `start_project JoaoCarabetta new_project myemail@email.com "Joao Carabetta"`
 
-
-Follow [this tutorial](https://medium.com/devnetwork/how-to-create-your-own-custom-terminal-commands-c5008782a78e) and use this code as your bash script:
+Follow [this tutorial](https://medium.com/devnetwork/how-to-create-your-own-custom-terminal-commands-c5008782a78e) and use the following code as your bash script:
 
 ```bash
 #!/bin/bash
-# prints the input
+
+# Start basic project
 function start_project() {
  
  username=$1
@@ -49,13 +49,4 @@ function start_project() {
  echo "Done!";
 }
 ```
-
-### How to use it
-
-
- Run the autorization and bash file:
-
- `chmod +x create_repo.sh && ./create_repo.sh [username] [project_name] [email] ["First Last_name"]`
-
- It will automatically create a repository on your local with the folder `basic` structure and a project sync on git :)
 
