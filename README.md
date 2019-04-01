@@ -4,8 +4,12 @@ You will be able to start a project with
 
 `start_project [username] [project_name] [email] ["First Last_name"]`
 
+For instance
 
-Follow [this](https://medium.com/devnetwork/how-to-create-your-own-custom-terminal-commands-c5008782a78e) and use this code in your bash script:
+`start_project JoaoCarabetta new_project myemail@email.com "Joao Carabetta"`
+
+
+Follow [this tutorial](https://medium.com/devnetwork/how-to-create-your-own-custom-terminal-commands-c5008782a78e) and use this code as your bash script:
 
 ```bash
 #!/bin/bash
