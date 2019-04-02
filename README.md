@@ -2,7 +2,8 @@
 
 An easy and fast way to start a project with everything that you need
 
-## One command = folder structure and github repo 
+## One command == folder structure and github repo 
+> Out[1]: True!
 
 You will be able to start a project with
 
