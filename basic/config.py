@@ -6,6 +6,6 @@ current_path = Path().resolve()
 abs_path = str(current_path.parent)
 sys.path.append(abs_path)
 
-RAW_PATH = current_path / 'data' / 'raw'
-TREAT_PATH = current_path / 'data' / 'treated'
-OUTPUT_PATH = current_path / 'data' / 'output'
+RAW_PATH = current_path.parent / 'data' / 'raw'
+TREAT_PATH = current_path.parent / 'data' / 'treated'
+OUTPUT_PATH = current_path.parent / 'data' / 'output'
