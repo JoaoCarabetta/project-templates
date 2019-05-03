@@ -9,3 +9,4 @@ sys.path.append(abs_path)
 RAW_PATH = current_path.parent / 'data' / 'raw'
 TREAT_PATH = current_path.parent / 'data' / 'treated'
 OUTPUT_PATH = current_path.parent / 'data' / 'output'
+FIGURES_PATH = current_path.parent / 'data' / 'figures'
