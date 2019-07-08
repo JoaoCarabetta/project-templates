@@ -11,13 +11,6 @@ You will be able to start a project with `start_project` and enter your infos.
 
 Follow [this tutorial](https://medium.com/devnetwork/how-to-create-your-own-custom-terminal-commands-c5008782a78e) and use the following code as your bash script:
 
-> Note: if you still have trouble calling the command `start_project`, follow this steps:
-> 1. Go to file `nano ~/.bash_profile`
-> 2. Enter `[[ -s ~/.bashrc ]] && source ~/.bashrc` and save it.
-> 3. Quit the terminal
-> 
-> This should allow you to use the command since `/.bash_profile` is called by the terminal and not `/.bashrc` (make sure you have the following code in your `.my_custom_commands.sh` file, as described in the [tutorial](https://medium.com/devnetwork/how-to-create-your-own-custom-terminal-commands-c5008782a78e)
-
 ```bash
 #!/bin/bash
 
