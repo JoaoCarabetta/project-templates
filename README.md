@@ -65,7 +65,7 @@ function start_project() {
 
 ### Common issues
 
-If you still have trouble calling the command `start_project`, follow this steps:
+If you still have trouble calling the command `start_project`, follow these steps:
 1. Go to file `nano ~./bash_profile`
 2. Enter `[[ -s ~/.bashrc ]] && source ~/.bashrc` and save it. 
 
