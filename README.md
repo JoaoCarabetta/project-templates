@@ -13,7 +13,15 @@ For instance
 
 `start_project JoaoCarabetta new_project myemail@email.com "Joao Carabetta"`
 
+## How to install
+
 Follow [this tutorial](https://medium.com/devnetwork/how-to-create-your-own-custom-terminal-commands-c5008782a78e) and use the following code as your bash script:
+
+> Note: if you still have trouble calling the command `start_project`, follow this steps:
+> 1. Go to file `nano ~./bash_profile`
+> 2. Enter `[[ -s ~/.bashrc ]] && source ~/.bashrc` and save it. 
+> 
+> This should allow you to use the command since `./bash_profile` is called by the terminal and not `./bashrc` (make sure you have the following code in your `.my_custom_commands.sh` file, as described in the [tutorial](https://medium.com/devnetwork/how-to-create-your-own-custom-terminal-commands-c5008782a78e)
 
 ```bash
 #!/bin/bash
@@ -55,3 +63,10 @@ function start_project() {
 }
 ```
 
+### Common issues
+
+If you still have trouble calling the command `start_project`, follow this steps:
+1. Go to file `nano ~./bash_profile`
+2. Enter `[[ -s ~/.bashrc ]] && source ~/.bashrc` and save it. 
+
+This should allow you to use the command since `./bash_profile` is called by the terminal and not `./bashrc` (make sure you have the code above in your `.my_custom_commands.sh` file, as described in the [tutorial](https://medium.com/devnetwork/how-to-create-your-own-custom-terminal-commands-c5008782a78e)
