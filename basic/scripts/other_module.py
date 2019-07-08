@@ -7,7 +7,7 @@ print('Running other_module.py ...')
 import os
 import sys
 sys.path.insert(0, '../')
-from config import RAW_PATH, TREAT_PATH, OUTPUT_PATH
+from config import RAW_PATH, TREAT_PATH, OUTPUT_PATH, FIGURES_PATH
 
 def get_me():
     print('hi!')
