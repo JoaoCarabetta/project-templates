@@ -7,7 +7,7 @@ function start_project() {
 
     echo "What will be the name of your project?"
     read project
-    echo "Enter your GitHub username:"
+    echo "Enter your GitHub username: www.github.com/<username>/<repo>"
     read username
     echo "And also your name with \" - like \"Fernanda Scovino\":"
     read name
