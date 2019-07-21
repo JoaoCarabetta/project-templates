@@ -38,5 +38,10 @@ function start_project() {
     echo "Uploading changes...";
     git push --set-upstream origin master
 
+    echo "Setting up virtual envoriment"
+    python3 -m venv $project
+    source $project/bin/activate
+    pip install -r requirements.txt
+
     echo "Done!";
 }
