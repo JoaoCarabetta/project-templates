@@ -15,47 +15,53 @@ Follow [this tutorial](https://medium.com/devnetwork/how-to-create-your-own-cust
 #!/bin/bash
 
 # Start basic project
+!/bin/bash
+
+# Start basic project
 function start_project() {
 
-    echo "Creating a git ropository...";
+    printf "\n>>> Creating a git ropository...";
 
-    echo "What will be the name of your project?"
+    printf ">>> What will be the name of your project?\n"
     read project
-    echo "Enter your GitHub username:"
+    printf "\n>>> Enter your GitHub username: www.github.com/<username>/<repo>\n"
     read username
-    echo "And also your name with \" - like \"Fernanda Scovino\":"
+    printf "\n>>> And also your name with \" - like \"Fernanda Scovino\":\n"
     read name
-    echo "Please, enter your GitHub email:"
+    printf "\n>>> Please, enter your GitHub email:\n"
     read email
 
     curl -u $username https://api.github.com/user/repos -d {\"name\":\"$project\"}
 
-    echo "Great! Creating local repository..."
+    printf "\n>>>> Great! Creating local repository...\n"
     mkdir $project
     cd $project
 
-    echo "Downloading basic folder...";
+    printf "\n>>> Downloading basic folder...\n";
     curl https://codeload.github.com/JoaoCarabetta/project-templates/tar.gz/master | tar -xz --strip=2 project-templates-master/basic
 
-    echo "Inicializing git and set remote...";
+    printf "\n>>> Inicializing git and set remote...\n";
     git init
     git remote add origin http://github.com/$username/$project.git
 
-    echo "Thank you! Setting user's config...";
+    echo "\n>>> Thank you! Setting user's config...\n";
     git config user.name $name
     git config user.email \"$email\"
 
-    echo "Adding changes and initial commit...";
+    printf "\n>>> Adding changes and initial commit...\n";
     git add .
     git commit -m "initial commit: folder structure"
 
-    echo "Uploading changes...";
+    printf "\n>>> Uploading changes...\n";
     git push --set-upstream origin master
 
-    echo "Done!";
+    printf "\n>>> Setting up virtual environment\n"
+    python3 -m venv $project
+    source $project/bin/activate
+    pip install -r requirements.txt
+
+    printf "\n>>> All done! :D (to exit venv, enter deactivate on terminal)\n";
 }
-
-
 ```
 
 ### Common issues
