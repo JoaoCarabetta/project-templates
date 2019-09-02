@@ -1,3 +1,6 @@
+# Delete install.sh
+rm install.sh
+
 # Add config files to ~/.project-templates
 mkdir ~/.project-templates
 
