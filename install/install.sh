@@ -7,7 +7,7 @@ mkdir ~/.project-templates
 cd ~/.project-templates
 
 # Doing the magic
-curl https://codeload.github.com/JoaoCarabetta/project-templates/tar.gz/master | tar -xz --strip=2 project-templates-master/project-templates 
+curl https://codeload.github.com/JoaoCarabetta/project-templates/tar.gz/issue-22-yml | tar -xz --strip=2 project-templates-master/project-templates 
 
 # Add executables.sh to `~/.bash_profile
 
