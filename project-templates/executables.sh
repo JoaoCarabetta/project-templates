@@ -10,7 +10,7 @@ function start_project() {
 
     printf ">>> What will be the name of your project?\n"
     read project
-    printf "\n>>> Enter your GitHub username: www.github.com/<username>/<repo>\n"
+    printf "\n>>> Enter your GitHub username: www.github.com/<USERNAME>/\n"
     read username
     printf "\n>>> And also your name with \" - like \"Fernanda Scovino\":\n"
     read name
