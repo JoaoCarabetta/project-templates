@@ -13,12 +13,12 @@ function start_project() {
    printf ">>> Do you want to use credentials from config.yaml? [Y/N]\n"
    read credentials
 
-   if credentials = 'Y'
+   if [ $credentials = 'Y' ]
    then
        read -r name <<<$(grep name config.yaml)
        read -r username <<<$(grep username config.yaml)
        read -r email <<<$(grep email config.yaml)
-   else [bool = 'N']
+   else [ $credentials = 'N']
        printf "\n>>> Enter your GitHub username: www.github.com/<USERNAME>/\n"
        read username
        printf "\n>>> And also your name with \" - like \"Fernanda Scovino\":\n"
