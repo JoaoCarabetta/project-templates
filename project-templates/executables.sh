@@ -6,7 +6,7 @@
 # Start basic project
 function start_project() {
 
-    printf "\n>>> Creating a git ropository...";
+    printf "\n>>> Creating a git ropository...\n";
 
     printf ">>> What will be the name of your project?\n"
     read project
