@@ -19,7 +19,7 @@ function start_project() {
        read -r username <<<$(grep username ~/.project-templates/config.yaml)
        read -r email <<<$(grep email ~/.project-templates/config.yaml)
        printf $name
-    if
+    fi
 }
 #    else [ $credentials = 'N']
 #        printf "\n>>> Enter your GitHub username: www.github.com/<USERNAME>/\n"
