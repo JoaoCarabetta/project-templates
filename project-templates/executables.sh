@@ -13,7 +13,7 @@ function start_project() {
    printf ">>> Do you want to use credentials from config.yaml? [Y/N]"
    read bool
 
-   if [bool = 'Y']
+   if [ bool = 'Y' ]
    then
        read -r name <<<$(grep name config.yaml)
        read -r username <<<$(grep username config.yaml)
