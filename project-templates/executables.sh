@@ -10,10 +10,10 @@ function start_project() {
 
    printf ">>> What will be the name of your project?\n"
    read project
-   printf ">>> Do you want to use credentials from config.yaml? [Y/N]"
-   read bool
+   printf ">>> Do you want to use credentials from config.yaml? [Y/N]\n"
+   read credentials
 
-   if [ bool = 'Y' ]
+   if credentials = 'Y'
    then
        read -r name <<<$(grep name config.yaml)
        read -r username <<<$(grep username config.yaml)
