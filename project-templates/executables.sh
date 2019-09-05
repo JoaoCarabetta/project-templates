@@ -15,7 +15,7 @@ function start_project() {
 
    if [ $credentials = 'Y' ]
    then
-       read -r name <<<$(grep name ~/.project-templates/config.yaml)
+       read -r name <<<$(grep name ~/.project-templates/config.yaml | sed "s/^.[^']*'//" )
        read -r username <<<$(grep username ~/.project-templates/config.yaml)
        read -r email <<<$(grep email ~/.project-templates/config.yaml)
        printf $name
