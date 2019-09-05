@@ -11,6 +11,7 @@ You will be able to start a project with `start_project` and enter your infos.
 
 **1.** Run this line
 
+> CHANGE HERE TO MASTER
 `curl https://codeload.github.com/JoaoCarabetta/project-templates/tar.gz/issue-22-yml | tar -xz --strip=2 project-templates-issue-22-yml/install/; chmod +x install.sh; ./install.sh;`
 
 **2.** Restart your terminal
