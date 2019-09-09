@@ -11,9 +11,7 @@ You will be able to start a project with `start_project` and enter your infos.
 
 **1.** Run this line
 
-`curl https://codeload.github.com/JoaoCarabetta/project-templates/tar.gz/master | tar -xz --strip=2 project-templates-master/install/; chmod +x install.sh; ./install.sh;`
-
-**2.** Restart your terminal
+`curl https://codeload.github.com/JoaoCarabetta/project-templates/tar.gz/master | tar -xz --strip=2 project-templates-master/install/; chmod +x install.sh; ./install.sh; source ~/.bash_profile;`
 
 **3.** Run `start_project` and let the magic happen
 
