@@ -18,5 +18,12 @@ import plotly.graph_objs as go
 import cufflinks as cf
 plotly.offline.init_notebook_mode(connected=True)
 
+import textwrap
+import cufflinks as cf
 cf.go_offline()
 cf.set_config_file(offline=False, world_readable=True)
+
+def iplottitle(title, width=40):
+    return '<br>'.join(textwrap.wrap(title, width))
+
+cf.themes.THEMES['custom'] = yaml.load(open('cufflinks_template.yaml', 'r'))
