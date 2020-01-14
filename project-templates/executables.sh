@@ -8,16 +8,47 @@ function start_project() {
 
     printf "\n>>> Creating a git ropository...\n";
 
-    printf ">>> What will be the name of your project?\n"
+    printf ">>> What will be the name of your project?\n";
     read project
-    printf "\n>>> Enter your GitHub username: www.github.com/<USERNAME>/\n"
-    read username
-    printf "\n>>> And also your name with \" - like \"Fernanda Scovino\":\n"
-    read name
-    printf "\n>>> Please, enter your GitHub email:\n"
-    read email
 
-    curl -u $username https://api.github.com/user/repos -d {\"name\":\"$project\"}
+    printf ">>> Do you want to use the credentials from config.yaml? [Y/N]\n";
+    read bool
+
+    if [ $bool = "Y" ]
+    then
+        read -r name <<<$(grep name config.yaml)
+        name=${name//*name: /};
+        read -r user <<<$(grep user config.yaml)
+        user=${user//*user: /};
+        read -r email <<<$(grep email config.yaml)
+        email=${email//*email: /};
+        read -r token <<<$(grep token config.yaml)
+        token=${token//*token: /};
+        printf "All done!\n\n"
+    else
+        printf "\n>>> Enter your GitHub username: www.github.com/<USERNAME>/\n";
+        read user
+        printf "\n>>> And also your name - like Fernanda Scovino:\n";
+        read name
+        printf "\n>>> Please, enter your GitHub email:\n";
+        read email
+        printf "\n>>> And insert your token (this will be visible only to you):\n";
+        read token
+        printf "\n>>> Do you want to save this credentials in config.yaml for futher use? [Y/N]\n"
+        read saving
+
+        if [ $saving == "Y" ]
+        then
+            echo -n > config.yaml
+            echo "name: \"${name}\"" >> config.yaml
+            echo "user: ${user}" >> config.yaml
+            echo "email: ${email}" >> config.yaml
+            echo "token: ${token}" >> config.yaml
+        printf "Done! Next time, just use the credentials from config.yaml :) \n"
+        fi
+    fi
+
+    curl -u $user:$token https://api.github.com/user/repos -d {\"name\":\"$project\"}
 
     printf "\n>>>> Great! Creating local repository...\n"
     mkdir $project
@@ -28,7 +59,7 @@ function start_project() {
 
     printf "\n>>> Inicializing git and set remote...\n";
     git init
-    git remote add origin http://github.com/$username/$project.git
+    git remote add origin http://github.com/$user/$project.git
 
     echo "\n>>> Thank you! Setting user's config...\n";
     git config user.name $name
