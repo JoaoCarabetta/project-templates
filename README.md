@@ -14,6 +14,7 @@ You will be able to start a project with `start_project` and enter your infos.
 > The token is now needed in order to create and push to your repositories via terminal. If you don't have one:
 > - Go to https://github.com/settings/tokens
 > - Select _Generate new token_
+> - Add a _Note_ to remind future you what this token is about
 > - On _Select scopes_, check _repo_
 > - Generate token at the end of the page, and don't forget to save it!
 
