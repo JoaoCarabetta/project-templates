@@ -57,11 +57,11 @@ function start_project() {
     printf "\n>>> Downloading basic folder...\n";
     curl https://codeload.github.com/JoaoCarabetta/project-templates/tar.gz/master | tar -xz --strip=2 project-templates-master/basic
 
-    printf "\n>>> Inicializing git and set remote...\n";
+    printf "\n>>> Inicializing git and setting remote...\n";
     git init
     git remote add origin http://github.com/$user/$project.git
 
-    echo "\n>>> Thank you! Setting user's config...\n";
+    echo "\n>>> Almost Done! Setting user's config...\n";
     git config user.name $name
     git config user.email \"$email\"
 
