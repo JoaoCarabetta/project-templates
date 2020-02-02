@@ -73,8 +73,8 @@ function start_project() {
     git push --set-upstream origin master
 
     printf "\n>>> Setting up virtual environment\n"
-    python3 -m venv $project
-    source $project/bin/activate
+    python3 -m venv .venv
+    source .venv/bin/activate
     pip install -r requirements.txt
 
     printf "\n>>> All done! :D (to exit venv, enter deactivate on terminal)\n";
