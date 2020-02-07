@@ -23,3 +23,9 @@ You will be able to start a project with `start_project` and enter your infos.
 `curl https://codeload.github.com/JoaoCarabetta/project-templates/tar.gz/master | tar -xz --strip=2 project-templates-master/install/; chmod +x install.sh; ./install.sh; source ~/.bash_profile;`
 
 **3.** Run `start_project` and let the magic happen
+
+## I don't want to install anything, gimme the oneliner 
+
+Create a new project folder, get into it and run
+
+`curl https://codeload.github.com/JoaoCarabetta/project-templates/tar.gz/master | tar -xz --strip=2 project-templates-master/basic`
