@@ -8,7 +8,6 @@ from copy import deepcopy
 import numpy as np
 import pandas as pd
 pd.options.display.max_columns = 999
-import pandas_profiling
 
 import warnings
 warnings.filterwarnings('ignore')
