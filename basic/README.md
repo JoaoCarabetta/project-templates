@@ -18,22 +18,18 @@ One Paragraph of project description goes here.
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-Start the enviorenment with
+1️⃣ Start the enviorenment with
 
-`make create-env`
-
-A jupyter kernel with the repo name will be available.
-
-If needed, update the `requirements.txt` and run
-
-`make update-env`
-
-#### Prerequisites
-
-You need to have the packages on `requirements.txt` installed. To do that, open the terminal and run:
-
+```bash
+$ make create-env
 ```
-pip3 install -U -r requirements.txt
+
+A jupyter kernel with your repo name will be available.
+
+2️⃣ If adding packages on `requirements.txt`, run the update on venv with
+
+```bash
+$ make update-env
 ```
 
 #### Changing author
