@@ -1,4 +1,4 @@
-pandas==0.23.4
+pandas>=1.0.0
 plotly==4.4.1
 cufflinks==0.17.0
 pyaml
