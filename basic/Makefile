@@ -1,3 +1,5 @@
+.PHONY: create-env update-env
+
 REPO=$(shell basename $(CURDIR))
 
 create-env:
