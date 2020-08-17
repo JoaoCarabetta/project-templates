@@ -2,6 +2,9 @@
 
 An easy and fast way to start a project with everything that you need.
 
+## Create a folder, cd to it and copy the following line
+`curl https://codeload.github.com/JoaoCarabetta/project-templates/tar.gz/master | tar -xz --strip=2 project-templates-master/basic`
+
 ## One command == folder structure and github repo ✅
 > Out[1]: True!
 
@@ -24,8 +27,4 @@ You will be able to start a project with `start_project` and enter your infos.
 
 **3.** Run `start_project` and let the magic happen
 
-## I don't want to install anything, gimme the oneliner 
 
-Create a new project folder, get into it and run
-
-`curl https://codeload.github.com/JoaoCarabetta/project-templates/tar.gz/master | tar -xz --strip=2 project-templates-master/basic`
